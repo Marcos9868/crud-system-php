@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="create-user.css">
   <title>Crud System - Create User</title>
 </head>
+
 <body>
   <div class="form-box">
     <form action="create-user.php" method="post">
@@ -14,10 +16,35 @@
           <strong>Customer's Form</strong>
         </legend>
         <div class="input-box">
-          <input type="text" name="name" id="name" placeholder="Fullname">
+          <input type="text" name="name" id="name" required>
+          <label for="name">Full Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" name="email" id="email" required>
+          <label for="name">Email</label>
+        </div>
+        <div class="input-box">
+          <input type="tel" name="phone" id="phone" required>
+          <label for="name">Phone</label>
+        </div>
+        <p>Gender:</p>
+        <input type="radio" name="gender" id="female" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="ohter" value="Other" required>
+        <label for="ohter">Other</label>
+        <div class="input-box">
+          <label for="name">
+            <strong>
+              Birthday:
+            </strong>
+          </label>
+          <input type="date" name="birthday" id="birthday" required>
         </div>
       </fieldset>
     </form>
   </div>
 </body>
+
 </html>
